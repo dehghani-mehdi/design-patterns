@@ -4,7 +4,7 @@ Base Product, could be `interface` or `class`:
 public interface IProduct {}
 ```
 
-Derived classes:
+Concrete Products:
 
 ```cs
 public class ConcreteProductA : IProduct {}
@@ -17,13 +17,13 @@ Creator/Factory:
 ```cs
 public class Creator
 {
-	public IProduct GetProduct(string input) 
-	{
-		if(input == "a") return new ConcreteProductA();
-		else if(input == "b") return new ConcreteProductB();
+    public IProduct GetProduct(string input) 
+    {
+        if(input == "a") return new ConcreteProductA();
+        else if(input == "b") return new ConcreteProductB();
 
-		// ...
-	}
+        // ...
+    }
 }
 ```
 

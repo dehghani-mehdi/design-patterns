@@ -12,12 +12,12 @@ public class ConcreteProductA : IProduct {}
 public class ConcreteProductB : IProduct {}
 ```
 
-Creator class:
+Creator/Factory:
 
 ```cs
 public abstract class Creator
 {
-	public abstract Product FactoryMethod();	
+    public abstract Product FactoryMethod();    
 }
 ```
 
